@@ -5,6 +5,16 @@ After writing [a post about my first android app](http://www.42hacks.com/notes/e
 Keep in mind that it's NOT a library, just a quick and dirty demo.
 
 
+
+Android 4.x screenshot
+----------
+![Screenshot](https://raw.github.com/dchapkine/android-staggered-grid-demo/master/media/img/screenshot1.png "Screenshot Android 4.x")
+
+Android 2.x screenshot
+----------
+![Screenshot](https://raw.github.com/dchapkine/android-staggered-grid-demo/master/media/img/screenshot2.png "Screenshot Android 2.x")
+
+
 So what's the difference between this demo and other existing implementations ?
 ----------
 Good question!, My implementation focus on:
@@ -12,11 +22,12 @@ Good question!, My implementation focus on:
 1. Optimizations for BIG staggered grids: under 10000 elements
 2. RAM efficiency. It is IMPOSSIBLE to run out of memory with this demo. Even with 10k+ images in the grid view.
 3. Lazy loading / unloading of images = Only images visible on screen are in memory
-4. Tested and runs very well on real 2.x and 4.x devices:
+4. Supports android 2.2+. Tested and runs very well on real 2.x and 4.x devices:
 	4. Android 2.2 | ZTE Blade ( 512 RAM | 600 MHz ARM 11 )
 	5. Android 4.1 | GalaxyTab 2 10.1 ( 1G RAM | Dual-core 1 GHz Cortex-A9 )
 5. You must know aspect ratio of ALL images in your grid BEFORE you load them in order to compute scroll height. This is NOT a "pull to load" staggered grid view, it just loads while you scroll.
 6. It is NOT a library, so please read and understand the code before using it, it is very short and well commented.
+
 
 
 Dependency #1
